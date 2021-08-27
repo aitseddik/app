@@ -3,7 +3,7 @@ import streamlit.components.v1 as components
 import pickle 
 import numpy as np
 # from PIL import Image
-# import getCars
+import getCars
 
 def load_model():
     with open('saved_steps.pkl', 'rb') as file:
