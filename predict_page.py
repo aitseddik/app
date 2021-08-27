@@ -1,5 +1,5 @@
 import streamlit as st
-# import streamlit.components.v1 as components
+import streamlit.components.v1 as components
 import pickle 
 import numpy as np
 # from PIL import Image
@@ -627,8 +627,8 @@ def show_predict_page():
 
         # cars = getCars.cars(location_choose, price_min, price_max, brand_choose, model_choose)
 
-        # st.subheader(f"Exemple des voitures : ")
-        # components.iframe(getCars.url(location_choose,price_min, price_max, brand_choose, model_choose), width=700, height=1000, scrolling=True)
+        st.subheader(f"Exemple des voitures : ")
+        components.iframe(getCars.url(location_choose,price_min, price_max, brand_choose, model_choose), width=700, height=1000, scrolling=True)
 
         # for car in cars:
         #     st.write(f"{car[0]} : {car[1]} ")
